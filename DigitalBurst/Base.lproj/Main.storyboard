@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigitalBurst" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DigitalBurst" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5Q-0s-Y08">
+                                <rect key="frame" x="41.5" y="220" width="292" height="73"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="56"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.47450980390000003" blue="0.66666666669999997" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caY-WH-6Eh">
+                                <rect key="frame" x="87.5" y="443" width="200" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="COZ-SI-eN2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="42"/>
+                                <state key="normal" title="start" backgroundImage="start">
+                                    <color key="titleColor" red="0.383429943" green="0.53307290060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.383429943" green="0.53307290060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTV-pW-GUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaQ-Ad-KwV">
+                                <rect key="frame" x="112.5" y="521" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dm8-s8-pEJ"/>
+                                    <constraint firstAttribute="width" constant="50" id="sAp-Wc-Sf2"/>
+                                </constraints>
+                                <state key="normal" image="unmute"/>
+                                <connections>
+                                    <action selector="setting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjt-zy-cBV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0v-B4-LUi">
+                                <rect key="frame" x="212.5" y="521" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GPQ-ii-eWd"/>
+                                    <constraint firstAttribute="width" constant="50" id="s4T-8R-zWp"/>
+                                </constraints>
+                                <state key="normal" image="tip"/>
+                                <connections>
+                                    <action selector="tip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iM4-pF-yZU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="caY-WH-6Eh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4BR-Kn-HSB"/>
+                            <constraint firstItem="gaQ-Ad-KwV" firstAttribute="top" secondItem="caY-WH-6Eh" secondAttribute="bottom" constant="20" id="5V0-Ee-UA3"/>
+                            <constraint firstItem="L5Q-0s-Y08" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="7Ix-cA-Eex"/>
+                            <constraint firstItem="caY-WH-6Eh" firstAttribute="top" secondItem="L5Q-0s-Y08" secondAttribute="bottom" constant="150" id="N50-pI-vNM"/>
+                            <constraint firstItem="d0v-B4-LUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="NTK-rW-T50"/>
+                            <constraint firstItem="d0v-B4-LUi" firstAttribute="centerY" secondItem="gaQ-Ad-KwV" secondAttribute="centerY" id="YDQ-bz-asr"/>
+                            <constraint firstItem="L5Q-0s-Y08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f1T-My-M9m"/>
+                            <constraint firstItem="gaQ-Ad-KwV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="uw2-xv-02w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="music_btn" destination="gaQ-Ad-KwV" id="zkP-3H-N8Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="start" width="113" height="39"/>
+        <image name="tip" width="92" height="94"/>
+        <image name="unmute" width="92" height="94"/>
+    </resources>
 </document>

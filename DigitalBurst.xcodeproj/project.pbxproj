@@ -12,6 +12,15 @@
 		F736EDD52230BCFD00460137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F736EDD32230BCFD00460137 /* Main.storyboard */; };
 		F736EDD72230BCFE00460137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F736EDD62230BCFE00460137 /* Assets.xcassets */; };
 		F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F736EDD82230BCFE00460137 /* LaunchScreen.storyboard */; };
+		F736EDE42230C71800460137 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDE22230C71800460137 /* GameSelectorViewController.swift */; };
+		F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDE32230C71800460137 /* GameSelectorViewController.xib */; };
+		F736EDEE2230C99A00460137 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = F736EDEC2230C99A00460137 /* Music.m */; };
+		F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F736EDED2230C99A00460137 /* button_click.mp3 */; };
+		F736EDF02230CA1900460137 /* DigitalBurst-Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = F736EDE72230C97900460137 /* DigitalBurst-Bridging-Header.h */; };
+		F736EDF42230D03C00460137 /* BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F736EDF32230D03C00460137 /* BGM.mp3 */; };
+		F736EDFD2230D39200460137 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFB2230D39200460137 /* GameViewController.swift */; };
+		F736EDFE2230D39200460137 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDFC2230D39200460137 /* GameViewController.xib */; };
+		F736EE002230FD4400460137 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFF2230FD4400460137 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,16 @@
 		F736EDD62230BCFE00460137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F736EDD92230BCFE00460137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F736EDDB2230BCFE00460137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F736EDE22230C71800460137 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
+		F736EDE32230C71800460137 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
+		F736EDE72230C97900460137 /* DigitalBurst-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalBurst-Bridging-Header.h"; sourceTree = "<group>"; };
+		F736EDEB2230C99A00460137 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
+		F736EDEC2230C99A00460137 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
+		F736EDED2230C99A00460137 /* button_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click.mp3; sourceTree = "<group>"; };
+		F736EDF32230D03C00460137 /* BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM.mp3; sourceTree = "<group>"; };
+		F736EDFB2230D39200460137 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F736EDFC2230D39200460137 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		F736EDFF2230FD4400460137 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,10 @@
 		F736EDCE2230BCFD00460137 /* DigitalBurst */ = {
 			isa = PBXGroup;
 			children = (
+				F736EDE72230C97900460137 /* DigitalBurst-Bridging-Header.h */,
+				F736EDF52230D36000460137 /* game */,
+				F736EDE62230C96500460137 /* resource */,
+				F736EDE12230C70000460137 /* gameSelector */,
 				F736EDCF2230BCFD00460137 /* AppDelegate.swift */,
 				F736EDD12230BCFD00460137 /* ViewController.swift */,
 				F736EDD32230BCFD00460137 /* Main.storyboard */,
@@ -62,6 +85,36 @@
 				F736EDDB2230BCFE00460137 /* Info.plist */,
 			);
 			path = DigitalBurst;
+			sourceTree = "<group>";
+		};
+		F736EDE12230C70000460137 /* gameSelector */ = {
+			isa = PBXGroup;
+			children = (
+				F736EDE22230C71800460137 /* GameSelectorViewController.swift */,
+				F736EDE32230C71800460137 /* GameSelectorViewController.xib */,
+			);
+			path = gameSelector;
+			sourceTree = "<group>";
+		};
+		F736EDE62230C96500460137 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F736EDF32230D03C00460137 /* BGM.mp3 */,
+				F736EDED2230C99A00460137 /* button_click.mp3 */,
+				F736EDEB2230C99A00460137 /* Music.h */,
+				F736EDEC2230C99A00460137 /* Music.m */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		F736EDF52230D36000460137 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				F736EDFB2230D39200460137 /* GameViewController.swift */,
+				F736EDFC2230D39200460137 /* GameViewController.xib */,
+				F736EDFF2230FD4400460137 /* NumberView.swift */,
+			);
+			path = game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +149,7 @@
 				TargetAttributes = {
 					F736EDCB2230BCFD00460137 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,9 +176,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F736EDFE2230D39200460137 /* GameViewController.xib in Resources */,
+				F736EDF02230CA1900460137 /* DigitalBurst-Bridging-Header.h in Resources */,
 				F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */,
+				F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */,
+				F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */,
 				F736EDD72230BCFE00460137 /* Assets.xcassets in Resources */,
 				F736EDD52230BCFD00460137 /* Main.storyboard in Resources */,
+				F736EDF42230D03C00460137 /* BGM.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F736EDFD2230D39200460137 /* GameViewController.swift in Sources */,
 				F736EDD22230BCFD00460137 /* ViewController.swift in Sources */,
+				F736EDE42230C71800460137 /* GameSelectorViewController.swift in Sources */,
 				F736EDD02230BCFD00460137 /* AppDelegate.swift in Sources */,
+				F736EDEE2230C99A00460137 /* Music.m in Sources */,
+				F736EE002230FD4400460137 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = DigitalBurst/Info.plist;
@@ -291,6 +355,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.DigitalBurst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigitalBurst/DigitalBurst-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = DigitalBurst/Info.plist;
@@ -309,6 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.DigitalBurst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigitalBurst/DigitalBurst-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
