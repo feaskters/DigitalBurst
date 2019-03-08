@@ -91,7 +91,7 @@ class GameViewController: UIViewController,NumberProtocol {
             let itemwidth = borderArray[i].frame.width
             let itemheight = borderArray[i].frame.height
             let itemy = borderArray[i].frame.origin.y
-            if containerx + itemx < x && x < containerx + itemx + itemwidth && containery + itemy < y && y < containery + itemy + itemheight && numArray[i].count < 8{
+            if containerx + itemx < x && x < containerx + itemx + itemwidth && containery + itemy < y && y < containery + itemy + itemheight && numArray[i].count < 7{
                 dic["x"] = containerx + itemx + 10
                 dic["y"] = containery + itemy + CGFloat(12.5 * Double(numArray[i].count + 1)) + CGFloat(50 * Double(numArray[i].count))
                 dic["width"] = itemwidth - 20
