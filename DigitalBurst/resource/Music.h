@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 //获取当前音量
 -(float)getMuteVolume;
 
+//播放融合音效
+-(void)musicPlayMergeEffective;
+
 @end
 
 NS_ASSUME_NONNULL_END

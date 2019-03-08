@@ -21,7 +21,8 @@ class GameViewController: UIViewController,NumberProtocol {
     
     @IBOutlet weak var selectView: UIView!
     
-
+    @IBOutlet weak var score: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -98,11 +99,44 @@ class GameViewController: UIViewController,NumberProtocol {
                 
                 dic["isBlock"] = CGFloat(1)
                 self.randomNumber()
+                
                 self.numArray[i].append(sender)
+                sender.isUserInteractionEnabled = false
+                
+                self.merge(index: i)
             }else{
             }
         }
         return dic
+    }
+    
+    //合并数字
+    func merge( index: Int) {
+        guard self.numArray[index].count >= 2 else {
+            return
+        }
+            //判断相等
+            if self.numArray[index].last?.getNum() == self.numArray[index][self.numArray[index].count - 2].getNum() && self.numArray[index].last?.getNum() != 1024 {
+                UIView.animate(withDuration: 0.5, animations: {
+                    //播放融合音效
+                    Music.shared().musicPlayMergeEffective()
+                    self.numArray[index].last?.frame = CGRect.init(x: self.numArray[index].last!.frame.origin.x, y: self.numArray[index].last!.frame.origin.y - 65.5, width: self.numArray[index].last!.frame.width, height: self.numArray[index].last!.frame.height)
+                }) { (Bool) in
+                    self.numArray[index].last?.removeFromSuperview()
+                    self.numArray[index].removeLast()
+                    self.numArray[index].last!.setNum(num: self.numArray[index].last!.getNum() * 2)
+                    //加分
+                    self.score.text = String(Int(self.score.text!)! + self.numArray[index].last!.getNum())
+                    self.merge(index: index)
+                    
+                }
+                
+            }else{
+                //判断block是否为满
+                
+                return
+            }
+        
     }
     
     func NumberMoveToBlock(x: CGFloat, y: CGFloat) {

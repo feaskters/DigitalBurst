@@ -13,6 +13,7 @@
 
 @property AVAudioPlayer *BGM;
 @property AVAudioPlayer *musiceffective;
+@property AVAudioPlayer *mergeEffectice;
 @end
 
 @implementation Music
@@ -29,6 +30,13 @@ static Music *_instance;
     NSURL *effective_url = [NSURL URLWithString:effective_path];
     _instance.musiceffective = [[AVAudioPlayer alloc]initWithContentsOfURL:effective_url error:nil];
     _instance.musiceffective.volume = 0.5;
+    
+    //初始化融合音效播放器
+    NSString *merge_path = [[NSBundle mainBundle]pathForResource:@"merge" ofType:@"mp3"];
+    NSURL *merge_url = [NSURL URLWithString:merge_path];
+    _instance.mergeEffectice = [[AVAudioPlayer alloc]initWithContentsOfURL:merge_url error:nil];
+    _instance.mergeEffectice.volume = 0.5;
+    _instance.mergeEffectice.rate = 2;
     
     //初始化BGM播放器
     NSString *BGM_path = [[NSBundle mainBundle]pathForResource:@"BGM" ofType:@"mp3"];
@@ -57,6 +65,11 @@ static Music *_instance;
 //播放音效
 -(void)musicPlayEffective{
     [_instance.musiceffective play];
+}
+
+//播放融合音效
+-(void)musicPlayMergeEffective{
+    [_instance.mergeEffectice play];
 }
 
 //静音和取消静音

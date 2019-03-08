@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="DigitalBurst" customModuleProvider="target">
             <connections>
                 <outlet property="container" destination="gOd-T5-I2G" id="ENE-3d-kgP"/>
+                <outlet property="score" destination="qfO-En-OHn" id="fqo-9f-lBt"/>
                 <outlet property="selectImage" destination="smm-uq-UbL" id="XHA-B5-25v"/>
                 <outlet property="selectView" destination="Plg-aM-bkB" id="2UC-hF-qed"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

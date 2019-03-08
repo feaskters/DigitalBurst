@@ -21,6 +21,7 @@
 		F736EDFD2230D39200460137 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFB2230D39200460137 /* GameViewController.swift */; };
 		F736EDFE2230D39200460137 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDFC2230D39200460137 /* GameViewController.xib */; };
 		F736EE002230FD4400460137 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFF2230FD4400460137 /* NumberView.swift */; };
+		F7E8AE84223222A800039FAB /* merge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7E8AE83223222A800039FAB /* merge.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F736EDFB2230D39200460137 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F736EDFC2230D39200460137 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		F736EDFF2230FD4400460137 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		F7E8AE83223222A800039FAB /* merge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = merge.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				F736EDF32230D03C00460137 /* BGM.mp3 */,
 				F736EDED2230C99A00460137 /* button_click.mp3 */,
+				F7E8AE83223222A800039FAB /* merge.mp3 */,
 				F736EDEB2230C99A00460137 /* Music.h */,
 				F736EDEC2230C99A00460137 /* Music.m */,
 			);
@@ -181,6 +184,7 @@
 				F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */,
 				F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */,
 				F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */,
+				F7E8AE84223222A800039FAB /* merge.mp3 in Resources */,
 				F736EDD72230BCFE00460137 /* Assets.xcassets in Resources */,
 				F736EDD52230BCFD00460137 /* Main.storyboard in Resources */,
 				F736EDF42230D03C00460137 /* BGM.mp3 in Resources */,

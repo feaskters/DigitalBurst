@@ -92,4 +92,10 @@ class NumberView: UIView {
     func setType(type:Int) {
         self.type = type
     }
+    
+    func setNum(num:Int) {
+        self.num = num
+        (self.subviews[0] as! UIImageView).image = UIImage.init(named: String(num))
+    }
+    
 }
