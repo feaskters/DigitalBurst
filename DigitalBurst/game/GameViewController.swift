@@ -98,7 +98,6 @@ class GameViewController: UIViewController,NumberProtocol {
                 dic["width"] = itemwidth - 20
                 
                 dic["isBlock"] = CGFloat(1)
-                self.randomNumber()
                 
                 self.numArray[i].append(sender)
                 sender.isUserInteractionEnabled = false
@@ -113,6 +112,7 @@ class GameViewController: UIViewController,NumberProtocol {
     //合并数字
     func merge( index: Int) {
         guard self.numArray[index].count >= 2 else {
+            self.randomNumber()
             return
         }
             //判断相等
@@ -133,12 +133,30 @@ class GameViewController: UIViewController,NumberProtocol {
                 
             }else{
                 //判断block是否为满
-                
-                return
+                self.judgeBlcok()
+                self.randomNumber()
             }
-        
     }
     
+    //判断blocks是否已满
+    func judgeBlcok() {
+        
+        var flag = true //判断是否为满标致
+        for item in self.numArray{
+            if item.count < 7{
+                flag = false
+            }
+        }
+        
+        //弹出gameOver界面
+        if flag{
+            let govc = GameOverViewController.init(nibName: nil, bundle: nil)
+            self.present(govc, animated: true, completion: nil)
+            govc.setPropertys(block: self.blockNum!, score: self.score.text!, gvc: self)
+        }
+    }
+    
+    //拖动过程代理
     func NumberMoveToBlock(x: CGFloat, y: CGFloat) {
         let containerx = self.container.frame.origin.x
         let containery = self.container.frame.origin.y

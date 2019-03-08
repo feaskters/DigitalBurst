@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="rankCell" rowHeight="96" id="b4y-14-zbD" customClass="rankTableViewCell" customModule="DigitalBurst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b4y-14-zbD" id="kMO-62-YpW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jL-FN-cIX">
+                        <rect key="frame" x="20" y="10" width="21" height="49.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nog-ya-zDp">
+                        <rect key="frame" x="70" y="10" width="72.5" height="49.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
+                        <color key="textColor" red="0.25490196079999999" green="0.078431372550000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0O-XK-87d">
+                        <rect key="frame" x="255" y="10" width="100" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="1NF-6x-HtD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                        <color key="textColor" red="1" green="0.62914934929999999" blue="0.20678734339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nog-ya-zDp" secondAttribute="bottom" constant="10" id="A4L-mR-Br2"/>
+                    <constraint firstItem="C0O-XK-87d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nog-ya-zDp" secondAttribute="trailing" id="LSe-3j-H1p"/>
+                    <constraint firstItem="3jL-FN-cIX" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="Ned-Zf-i1u"/>
+                    <constraint firstItem="nog-ya-zDp" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="PCf-ur-xuL"/>
+                    <constraint firstItem="C0O-XK-87d" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="cNA-ad-3f6"/>
+                    <constraint firstAttribute="trailing" secondItem="C0O-XK-87d" secondAttribute="trailing" constant="20" id="gXp-di-b6v"/>
+                    <constraint firstAttribute="bottom" secondItem="C0O-XK-87d" secondAttribute="bottom" constant="10" id="hhC-kN-fXv"/>
+                    <constraint firstAttribute="bottom" secondItem="3jL-FN-cIX" secondAttribute="bottom" constant="10" id="otC-0n-bRk"/>
+                    <constraint firstItem="nog-ya-zDp" firstAttribute="leading" secondItem="kMO-62-YpW" secondAttribute="leading" constant="70" id="q8J-Qd-J5y"/>
+                    <constraint firstItem="3jL-FN-cIX" firstAttribute="leading" secondItem="kMO-62-YpW" secondAttribute="leading" constant="20" id="sJs-CF-x5k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="nog-ya-zDp" id="I2L-Ff-bdb"/>
+                <outlet property="rank" destination="3jL-FN-cIX" id="DwY-U0-Ibs"/>
+                <outlet property="score" destination="C0O-XK-87d" id="cg0-fQ-wEO"/>
+            </connections>
+            <point key="canvasLocation" x="868" y="132.23388305847078"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -45,6 +45,8 @@ class GameSelectorViewController: UIViewController {
             self.present(gvc, animated: false, completion: nil)
             break
         case 1:
+            let rvc = RankViewController.init(nibName:nil , bundle:nil)
+            self.present(rvc, animated: true, completion: nil)
             break
         default:
             break

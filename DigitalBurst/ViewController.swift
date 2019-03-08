@@ -32,11 +32,11 @@ class ViewController: UIViewController {
         tip.numberOfLines = 0
         tip.font = UIFont.init(name: "Marker Felt", size: 18)
         if getCurrentLanguage() == "cn"{
-            tip.text = "玩法介绍: \n\t 将相应的数字拖到框中，使得每条线上连接的数字之和为10。"
+            tip.text = "玩法介绍: \n\t 将相应的数字拖到框中，使得两个相同的数字可以相加。"
         }else{
-            tip.text = "How to play: \n\t Drag the appropriate number into the box so that the sum of the numbers connected on each line is 10."
+            tip.text = "How to play: \n\t Drag the appropriate number into the blocks so that the same numbers will merge."
         }
-        tip.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        tip.textColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
         view.addSubview(tip)
         
         return view
