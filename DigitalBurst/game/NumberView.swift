@@ -73,8 +73,8 @@ class NumberView: UIView {
                 }
             }else{
                 UIView.animate(withDuration: 0.5) {
-                    self.frame = CGRect.init(x: dic!["x"]! , y: dic!["y"]!, width: dic!["width"]!, height: 50)
-                    self.subviews[0].frame = CGRect.init(x: 0, y: 0, width: dic!["width"]!, height: 50)
+                    self.frame = CGRect.init(x: dic!["x"]! , y: dic!["y"]!, width: dic!["width"]!, height: dic!["height"]!)
+                    self.subviews[0].frame = CGRect.init(x: 0, y: 0, width: dic!["width"]!, height: dic!["height"]!)
                 }
             }
         }else{

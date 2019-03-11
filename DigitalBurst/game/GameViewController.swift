@@ -125,7 +125,7 @@ class GameViewController: UIViewController,NumberProtocol {
     }
     
     
-    override func viewWillAppear(_ animated: Bool)  {
+    override func viewDidAppear(_ animated: Bool)  {
         let containerWidth = container.frame.width //容器宽
         let containerHeight = container.frame.height //容器高
         let arrayWidth = containerWidth / CGFloat(blockNum!) //数字串宽
@@ -165,6 +165,7 @@ class GameViewController: UIViewController,NumberProtocol {
         dic["x"] = CGFloat(sender.beginX!)
         dic["y"] = CGFloat(sender.beginY!)
         dic["width"] = CGFloat(0)
+        dic["height"] = (container.frame.height - 12.5 * 8) / 7 
         let containerx = self.container.frame.origin.x
         let containery = self.container.frame.origin.y
         for i in 0...borderArray.count - 1 {
@@ -174,7 +175,7 @@ class GameViewController: UIViewController,NumberProtocol {
             let itemy = borderArray[i].frame.origin.y
             if containerx + itemx < x && x < containerx + itemx + itemwidth && containery + itemy < y && y < containery + itemy + itemheight && numArray[i].count < 7{
                 dic["x"] = containerx + itemx + 10
-                dic["y"] = containery + itemy + CGFloat(12.5 * Double(numArray[i].count + 1)) + CGFloat(50 * Double(numArray[i].count))
+                dic["y"] = containery + itemy + CGFloat(12.5 * Double(numArray[i].count + 1)) + CGFloat(Double(dic["height"]!) * Double(numArray[i].count))
                 dic["width"] = itemwidth - 20
                 
                 dic["isBlock"] = CGFloat(1)
