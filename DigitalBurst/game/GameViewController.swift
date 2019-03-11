@@ -16,6 +16,12 @@ class GameViewController: UIViewController,NumberProtocol {
     var arrayWidth : CGFloat?
     let border_silver = UIImage.init(named: "border_silver")
     let border_gold = UIImage.init(named: "border_gold")
+    var selectNum : NumberView? //提供选择的数字
+    var skillNum : Dictionary<String,Int> = ["random" : 3,
+                                             "128" : 1,
+                                             "256" : 0,
+                                             "512" : 0]
+    
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var selectImage: UIImageView!
     
@@ -42,8 +48,82 @@ class GameViewController: UIViewController,NumberProtocol {
         numView.setType(type: 0)
         numView.delegate = self
         self.view.addSubview(numView)
-        
+        self.selectNum = numView
     }
+    
+    //更换随机数字
+    func changeNum() {
+        //保存现有数字
+        let num = self.selectNum?.getNum()
+        self.selectNum?.removeFromSuperview()
+        self.randomNumber()
+        //判断相等
+        while  num == self.selectNum?.getNum(){
+            self.selectNum?.removeFromSuperview()
+            self.randomNumber()
+        }
+    }
+    
+    //清空Num以下的数字
+    func clearNumsBelow(Num:Int) {
+        for i in 0...numArray.count - 1 {
+            var flag = 0 //删除数字个数标致
+            for j in 0...self.numArray[i].count{
+                let index = j - flag
+                
+                if self.numArray[i].count > index {
+                    if self.numArray[i][index].getNum() < Num{
+                        self.numArray[i][index].removeFromSuperview()
+                        self.numArray[i].remove(at: index)
+                        flag = flag + 1
+                        
+                        if self.numArray[i].count > index {
+                        //动画向上
+                            UIView.animate(withDuration: 0.5, animations: {
+                                 self.numArray[i][index].frame = CGRect.init(x: self.numArray[i][index].frame.origin.x, y: self.numArray[i][index].frame.origin.y - CGFloat( 62.5 * Double(flag)), width: self.numArray[i][index].frame.width, height: self.numArray[i][index].frame.height)
+                            })
+                           
+                        }
+                    }
+                }
+                
+            }
+            self.merge(index: i,tag:0)
+        }
+    }
+    
+//技能点击
+    @IBAction func skill(_ sender: UIButton) {
+        Music.shared().musicPlayEffective()
+        sender.setTitle(String(Int((sender.titleLabel?.text!)!)! - 1), for: UIControl.State.normal)
+        //tag=1025为随机
+        if sender.tag == 1025 {
+            self.changeNum()
+            self.skillNum["random"] = self.skillNum["random"]! - 1
+            if self.skillNum["random"]! == 0{
+                sender.isEnabled = false
+            }
+        }else{
+            self.clearNumsBelow(Num: sender.tag)
+            self.skillNum[String(sender.tag)] = self.skillNum[String(sender.tag)]! - 1
+            if self.skillNum[String(sender.tag)]! == 0 {
+                sender.isEnabled = false
+            }
+        }
+    }
+    
+    //增加技能次数
+    func addSkill(tag:Int) {
+        //判断是否可以加
+        let item = self.view.viewWithTag(tag)
+        if item != nil {
+            self.skillNum[String(tag)] = self.skillNum[String(tag)]! + 1
+            let btn = item as! UIButton
+            btn.setTitle(String(Int((btn.titleLabel?.text)!)! + 1), for: UIControl.State.normal)
+            btn.isEnabled = true
+        }
+    }
+    
     
     override func viewWillAppear(_ animated: Bool)  {
         let containerWidth = container.frame.width //容器宽
@@ -102,7 +182,7 @@ class GameViewController: UIViewController,NumberProtocol {
                 self.numArray[i].append(sender)
                 sender.isUserInteractionEnabled = false
                 
-                self.merge(index: i)
+                self.merge(index: i,tag:1)
             }else{
             }
         }
@@ -110,9 +190,12 @@ class GameViewController: UIViewController,NumberProtocol {
     }
     
     //合并数字
-    func merge( index: Int) {
+    //tag->是否产生新数字
+    func merge( index: Int,tag:Int) {
         guard self.numArray[index].count >= 2 else {
-            self.randomNumber()
+            if tag == 1 {
+                self.randomNumber()
+            }
             return
         }
             //判断相等
@@ -127,14 +210,18 @@ class GameViewController: UIViewController,NumberProtocol {
                     self.numArray[index].last!.setNum(num: self.numArray[index].last!.getNum() * 2)
                     //加分
                     self.score.text = String(Int(self.score.text!)! + self.numArray[index].last!.getNum())
-                    self.merge(index: index)
+                    //加技能
+                    self.addSkill(tag: (self.numArray[index].last!.getNum()) / 2)
                     
+                    self.merge(index: index,tag:tag)
                 }
                 
             }else{
-                //判断block是否为满
-                self.judgeBlcok()
-                self.randomNumber()
+                if tag == 1 {
+                    //判断block是否为满
+                    self.judgeBlcok()
+                    self.randomNumber()
+                }
             }
     }
     

@@ -23,6 +23,8 @@
 		F736EDFD2230D39200460137 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFB2230D39200460137 /* GameViewController.swift */; };
 		F736EDFE2230D39200460137 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDFC2230D39200460137 /* GameViewController.xib */; };
 		F736EE002230FD4400460137 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFF2230FD4400460137 /* NumberView.swift */; };
+		F74663DC22360EE900976B93 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74663DA22360EE900976B93 /* SkillsViewController.swift */; };
+		F74663DD22360EE900976B93 /* SkillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74663DB22360EE900976B93 /* SkillsViewController.xib */; };
 		F7D505A1223246C700D3ADBE /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D5059F223246C700D3ADBE /* GameOverViewController.swift */; };
 		F7D505A2223246C700D3ADBE /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D505A0223246C700D3ADBE /* GameOverViewController.xib */; };
 		F7D505B02232516D00D3ADBE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505A52232516D00D3ADBE /* FMDatabaseQueue.m */; };
@@ -56,6 +58,8 @@
 		F736EDFB2230D39200460137 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F736EDFC2230D39200460137 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		F736EDFF2230FD4400460137 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		F74663DA22360EE900976B93 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		F74663DB22360EE900976B93 /* SkillsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsViewController.xib; sourceTree = "<group>"; };
 		F7D5059F223246C700D3ADBE /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		F7D505A0223246C700D3ADBE /* GameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverViewController.xib; sourceTree = "<group>"; };
 		F7D505A42232516D00D3ADBE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -110,7 +114,7 @@
 				F736EDF52230D36000460137 /* game */,
 				F736EDE62230C96500460137 /* resource */,
 				F736EDE12230C70000460137 /* gameSelector */,
-				F7D505B9223254DD00D3ADBE /* rank */,
+				F7D505B9223254DD00D3ADBE /* others */,
 				F736EDCF2230BCFD00460137 /* AppDelegate.swift */,
 				F736EDD12230BCFD00460137 /* ViewController.swift */,
 				F736EDD32230BCFD00460137 /* Main.storyboard */,
@@ -175,15 +179,17 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
-		F7D505B9223254DD00D3ADBE /* rank */ = {
+		F7D505B9223254DD00D3ADBE /* others */ = {
 			isa = PBXGroup;
 			children = (
 				F70A5D13223261CF00F72165 /* rankTableViewCell.xib */,
 				F7D505BA223254F100D3ADBE /* RankViewController.swift */,
 				F7D505BB223254F100D3ADBE /* RankViewController.xib */,
 				F70A5D15223261EE00F72165 /* rankTableViewCell.swift */,
+				F74663DA22360EE900976B93 /* SkillsViewController.swift */,
+				F74663DB22360EE900976B93 /* SkillsViewController.xib */,
 			);
-			path = rank;
+			path = others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +255,7 @@
 				F70A5D14223261CF00F72165 /* rankTableViewCell.xib in Resources */,
 				F736EDFE2230D39200460137 /* GameViewController.xib in Resources */,
 				F736EDF02230CA1900460137 /* DigitalBurst-Bridging-Header.h in Resources */,
+				F74663DD22360EE900976B93 /* SkillsViewController.xib in Resources */,
 				F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */,
 				F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */,
 				F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */,
@@ -273,6 +280,7 @@
 				F736EDD22230BCFD00460137 /* ViewController.swift in Sources */,
 				F7D505B22232516D00D3ADBE /* FMDatabase.m in Sources */,
 				F736EDE42230C71800460137 /* GameSelectorViewController.swift in Sources */,
+				F74663DC22360EE900976B93 /* SkillsViewController.swift in Sources */,
 				F7D505B32232516D00D3ADBE /* FMDatabasePool.m in Sources */,
 				F7D505B42232516D00D3ADBE /* FMResultSet.m in Sources */,
 				F736EDD02230BCFD00460137 /* AppDelegate.swift in Sources */,
@@ -429,8 +437,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7M2A724UM8;
+				DEVELOPMENT_TEAM = W4P3QL82M5;
 				INFOPLIST_FILE = DigitalBurst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +449,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DigitalBurst/DigitalBurst-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,8 +459,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7M2A724UM8;
+				DEVELOPMENT_TEAM = W4P3QL82M5;
 				INFOPLIST_FILE = DigitalBurst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +470,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DigitalBurst/DigitalBurst-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

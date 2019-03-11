@@ -32,6 +32,7 @@ class GameSelectorViewController: UIViewController {
          3:3
          4:4
          1:rank
+         0:skills
      */
     @IBAction func btn_click(_ sender: UIButton) {
         //音效
@@ -47,6 +48,10 @@ class GameSelectorViewController: UIViewController {
         case 1:
             let rvc = RankViewController.init(nibName:nil , bundle:nil)
             self.present(rvc, animated: true, completion: nil)
+            break
+        case 0:
+            let svc = SkillsViewController.init(nibName: nil, bundle: nil)
+            self.present(svc, animated: true, completion: nil)
             break
         default:
             break

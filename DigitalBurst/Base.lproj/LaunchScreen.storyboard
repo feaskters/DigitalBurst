@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="MnJ-UZ-k8M">
+                                <rect key="frame" x="112.5" y="158.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="EIc-od-fzW"/>
+                                    <constraint firstAttribute="height" constant="150" id="uyW-fq-Vi2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DigitalBurst" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFA-cg-USL">
+                                <rect key="frame" x="107.5" y="358.5" width="160" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.67728024152369271" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="iaG-Bz-o0z">
+                                <rect key="frame" x="15" y="30" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="kG9-ew-0J4"/>
+                                    <constraint firstAttribute="height" constant="50" id="y4U-td-BjL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-wi-RYZ">
+                                <rect key="frame" x="315" y="467" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2AX-oX-GQl"/>
+                                    <constraint firstAttribute="width" constant="50" id="zOe-FI-W6b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_rotate" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-6e-OAC">
+                                <rect key="frame" x="225" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CuE-nO-PF8"/>
+                                    <constraint firstAttribute="height" constant="50" id="RGt-hJ-E0z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sFA-cg-USL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6ZL-sG-6KZ"/>
+                            <constraint firstItem="iaG-Bz-o0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="9wp-or-mS9"/>
+                            <constraint firstItem="MnJ-UZ-k8M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="P8U-ZB-6CN"/>
+                            <constraint firstItem="MnJ-UZ-k8M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RkQ-kA-Lmn"/>
+                            <constraint firstItem="iaG-Bz-o0z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="S70-St-u1k"/>
+                            <constraint firstItem="sFA-cg-USL" firstAttribute="top" secondItem="MnJ-UZ-k8M" secondAttribute="bottom" constant="50" id="Tup-BR-DEu"/>
+                            <constraint firstAttribute="trailing" secondItem="Ock-wi-RYZ" secondAttribute="trailing" constant="10" id="WkL-Su-mm4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KgD-6e-OAC" secondAttribute="trailing" constant="100" id="bcZ-1n-Tcv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ock-wi-RYZ" secondAttribute="bottom" constant="150" id="c2n-gJ-Sjb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KgD-6e-OAC" secondAttribute="bottom" constant="20" id="weG-oe-UC7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +74,9 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iTunesArtwork" width="512" height="512"/>
+        <image name="star" width="89" height="90"/>
+        <image name="star_rotate" width="70" height="70"/>
+    </resources>
 </document>

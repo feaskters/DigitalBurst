@@ -80,11 +80,25 @@
                         <action selector="btn_click:" destination="-1" eventType="touchUpInside" id="ixh-af-CNm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Ve-u5O">
+                    <rect key="frame" x="112.5" y="590" width="150" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="dpo-pi-zmS"/>
+                        <constraint firstAttribute="width" constant="150" id="yMj-5T-gZv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <state key="normal" title="skills" backgroundImage="button_orange"/>
+                    <connections>
+                        <action selector="btn_click:" destination="-1" eventType="touchUpInside" id="5Cq-6C-5TO"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="v2G-Ve-u5O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0EV-pa-hnM"/>
                 <constraint firstItem="uTf-jd-ea6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0aO-eW-DZf"/>
                 <constraint firstItem="GmX-ug-Y41" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="37d-7Y-PVm"/>
+                <constraint firstItem="v2G-Ve-u5O" firstAttribute="top" secondItem="zzB-U1-Rus" secondAttribute="bottom" constant="20" id="472-Xc-bCg"/>
                 <constraint firstItem="7Rc-OQ-RLw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Pg-3E-bGO"/>
                 <constraint firstAttribute="bottom" secondItem="58Z-xa-SiL" secondAttribute="bottom" id="7Qo-oj-bar"/>
                 <constraint firstItem="7Rc-OQ-RLw" firstAttribute="top" secondItem="uTf-jd-ea6" secondAttribute="bottom" constant="99" id="8H2-FN-pbc"/>
@@ -117,6 +131,7 @@
         <image name="bg4" width="800" height="1200"/>
         <image name="button_blue" width="154" height="91"/>
         <image name="button_green" width="113" height="39"/>
+        <image name="button_orange" width="117" height="47"/>
         <image name="button_red" width="154" height="91"/>
     </resources>
 </document>

@@ -68,19 +68,83 @@
                         <constraint firstAttribute="width" constant="150" id="sz7-Jh-3KC"/>
                     </constraints>
                 </view>
+                <button opaque="NO" tag="256" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXR-lm-hT0">
+                    <rect key="frame" x="341" y="558" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="LBM-7F-wH5"/>
+                        <constraint firstAttribute="height" constant="60" id="aLL-Ho-D1l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <state key="normal" title="0" backgroundImage="256-skill">
+                        <color key="titleColor" red="0.86274509799999999" green="0.2866336860241368" blue="0.25317115139490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skill:" destination="-1" eventType="touchUpInside" id="ol0-Mr-tNC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="512" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-iU-1cH">
+                    <rect key="frame" x="341" y="648" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="A4g-SR-CZX"/>
+                        <constraint firstAttribute="height" constant="60" id="J5j-a6-WLA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <state key="normal" title="0" backgroundImage="512-skill">
+                        <color key="titleColor" red="0.86274509799999999" green="0.286633686" blue="0.25317115140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skill:" destination="-1" eventType="touchUpInside" id="szf-0x-FQ5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="128" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEf-Qn-EAG">
+                    <rect key="frame" x="16" y="558" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="wZe-xI-401"/>
+                        <constraint firstAttribute="height" constant="60" id="zQV-Rv-NQ2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <state key="normal" title="1" backgroundImage="128-skill">
+                        <color key="titleColor" red="0.76327341508574775" green="0.86274509799999999" blue="0.25515091539129264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skill:" destination="-1" eventType="touchUpInside" id="NAp-te-MPi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1025" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kru-S0-mcO">
+                    <rect key="frame" x="16" y="648" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="X6Y-eu-lVB"/>
+                        <constraint firstAttribute="height" constant="60" id="cvY-aF-xhH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <state key="normal" title="3" backgroundImage="random-skill">
+                        <color key="titleColor" red="0.80720204819486607" green="0.22878474094121859" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skill:" destination="-1" eventType="touchUpInside" id="Mau-fD-k7N"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="IEf-Qn-EAG" firstAttribute="leading" secondItem="gOd-T5-I2G" secondAttribute="leading" id="4UV-YL-UCU"/>
+                <constraint firstItem="IEf-Qn-EAG" firstAttribute="top" secondItem="smm-uq-UbL" secondAttribute="top" id="4sY-7O-N4O"/>
+                <constraint firstItem="kru-S0-mcO" firstAttribute="leading" secondItem="gOd-T5-I2G" secondAttribute="leading" id="7La-5k-FBi"/>
+                <constraint firstItem="h9d-iU-1cH" firstAttribute="trailing" secondItem="gOd-T5-I2G" secondAttribute="trailing" id="9NF-na-QBq"/>
                 <constraint firstItem="MJ0-q2-KHc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A6b-im-6qV"/>
+                <constraint firstItem="SXR-lm-hT0" firstAttribute="trailing" secondItem="gOd-T5-I2G" secondAttribute="trailing" id="D3X-gx-v0f"/>
                 <constraint firstItem="Plg-aM-bkB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F8J-8P-rhH"/>
                 <constraint firstItem="u2N-05-DJG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Kg8-7d-4qY"/>
+                <constraint firstItem="h9d-iU-1cH" firstAttribute="bottom" secondItem="smm-uq-UbL" secondAttribute="bottom" id="OAp-F4-SIg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MJ0-q2-KHc" secondAttribute="trailing" id="SiC-mC-6fc"/>
                 <constraint firstItem="gOd-T5-I2G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UEd-Qr-V3E"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gOd-T5-I2G" secondAttribute="trailing" constant="16" id="VCk-Ir-Cf6"/>
                 <constraint firstItem="gOd-T5-I2G" firstAttribute="top" secondItem="u2N-05-DJG" secondAttribute="bottom" constant="8" id="an9-Tf-pdL"/>
+                <constraint firstItem="kru-S0-mcO" firstAttribute="bottom" secondItem="smm-uq-UbL" secondAttribute="bottom" id="cUG-MP-PcA"/>
                 <constraint firstAttribute="bottom" secondItem="MJ0-q2-KHc" secondAttribute="bottom" id="egY-9L-Gf0"/>
                 <constraint firstItem="u2N-05-DJG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="hJv-zz-Ncx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qfO-En-OHn" secondAttribute="trailing" constant="16" id="ijX-Dc-Vdn"/>
+                <constraint firstItem="SXR-lm-hT0" firstAttribute="top" secondItem="smm-uq-UbL" secondAttribute="top" id="klV-ZY-UZZ"/>
                 <constraint firstItem="MJ0-q2-KHc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pQy-83-zwX"/>
                 <constraint firstItem="Plg-aM-bkB" firstAttribute="top" secondItem="gOd-T5-I2G" secondAttribute="bottom" constant="20" id="tvt-Pn-uTy"/>
                 <constraint firstItem="qfO-En-OHn" firstAttribute="centerY" secondItem="u2N-05-DJG" secondAttribute="centerY" id="v9Z-JF-SzZ"/>
@@ -91,8 +155,12 @@
         </view>
     </objects>
     <resources>
+        <image name="128-skill" width="88" height="88"/>
+        <image name="256-skill" width="88" height="88"/>
+        <image name="512-skill" width="88" height="88"/>
         <image name="bg5" width="800" height="1200"/>
         <image name="goback" width="71" height="75"/>
         <image name="goback_click" width="71" height="75"/>
+        <image name="random-skill" width="88" height="88"/>
     </resources>
 </document>
