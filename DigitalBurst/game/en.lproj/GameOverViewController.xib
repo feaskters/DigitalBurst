@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameOverViewController" customModule="DigitalBurst" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="JzK-fZ-QJl" id="4r6-Ct-YyY"/>
+                <outlet property="score" destination="vMO-05-yJ5" id="bfX-ef-8CJ"/>
+                <outlet property="titleLabel" destination="FQe-9F-epj" id="of1-FH-ZPt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-UA-d1N">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Blocks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQe-9F-epj">
+                    <rect key="frame" x="83" y="100" width="209" height="73"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="56"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o8-64-w3z">
+                    <rect key="frame" x="136.5" y="253" width="102" height="47"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.60784313729999995" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-05-yJ5">
+                    <rect key="frame" x="96.5" y="300" width="182" height="73"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="56"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB5-Lc-ErB">
+                    <rect key="frame" x="137" y="453" width="101" height="47"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.60784313729999995" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-fZ-QJl">
+                    <rect key="frame" x="112.5" y="508" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="jdK-bz-w2c"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-2v-iav">
+                    <rect key="frame" x="129" y="588" width="117" height="47"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    <state key="normal" title="BACK" backgroundImage="button_orange"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="OlM-lc-Le4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0o8-64-w3z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1qk-1b-zjf"/>
+                <constraint firstItem="vMO-05-yJ5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AUw-9A-i6f"/>
+                <constraint firstItem="JzK-fZ-QJl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BwY-jf-E9t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BZa-UA-d1N" secondAttribute="trailing" id="D3y-nC-quV"/>
+                <constraint firstItem="JzK-fZ-QJl" firstAttribute="top" secondItem="RB5-Lc-ErB" secondAttribute="bottom" constant="8" id="Fsb-Xa-Rev"/>
+                <constraint firstItem="hNb-2v-iav" firstAttribute="top" secondItem="JzK-fZ-QJl" secondAttribute="bottom" constant="50" id="Hk1-ls-YfT"/>
+                <constraint firstItem="BZa-UA-d1N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jka-6M-Yo6"/>
+                <constraint firstItem="vMO-05-yJ5" firstAttribute="top" secondItem="0o8-64-w3z" secondAttribute="bottom" id="SEQ-JX-9XQ"/>
+                <constraint firstItem="RB5-Lc-ErB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VaP-5P-yk4"/>
+                <constraint firstItem="BZa-UA-d1N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ayi-fc-Z6s"/>
+                <constraint firstItem="FQe-9F-epj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="bPR-P3-cgU"/>
+                <constraint firstItem="FQe-9F-epj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bbt-Py-KaO"/>
+                <constraint firstItem="RB5-Lc-ErB" firstAttribute="top" secondItem="vMO-05-yJ5" secondAttribute="bottom" constant="80" id="fG9-xT-HEc"/>
+                <constraint firstItem="0o8-64-w3z" firstAttribute="top" secondItem="FQe-9F-epj" secondAttribute="bottom" constant="80" id="gwl-wX-oFX"/>
+                <constraint firstItem="hNb-2v-iav" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jv0-zf-9Oc"/>
+                <constraint firstAttribute="bottom" secondItem="BZa-UA-d1N" secondAttribute="bottom" id="nuC-vi-uOS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52" y="84.107946026986511"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg3" width="800" height="1200"/>
+        <image name="button_orange" width="117" height="47"/>
+    </resources>
+</document>

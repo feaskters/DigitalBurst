@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "SCORE"; ObjectID = "0o8-64-w3z"; */
+"0o8-64-w3z.text" = "得分";
+
+/* Class = "UILabel"; text = "2 Blocks"; ObjectID = "FQe-9F-epj"; */
+"FQe-9F-epj.text" = "2格";
+
+/* Class = "UITextField"; text = "Player"; ObjectID = "JzK-fZ-QJl"; */
+"JzK-fZ-QJl.text" = "Player";
+
+/* Class = "UILabel"; text = "NAME"; ObjectID = "RB5-Lc-ErB"; */
+"RB5-Lc-ErB.text" = "名字";
+
+/* Class = "UIButton"; normalTitle = "BACK"; ObjectID = "hNb-2v-iav"; */
+"hNb-2v-iav.normalTitle" = "返回";
+
+/* Class = "UILabel"; text = "00000"; ObjectID = "vMO-05-yJ5"; */
+"vMO-05-yJ5.text" = "00000";

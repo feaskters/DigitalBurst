@@ -47,11 +47,19 @@ class RankViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         switch sender.tag {
         case 2:
-            self.titleLabel.text = "2 Blocks"
+            if  self.getCurrentLanguage() == "cn"{
+                self.titleLabel.text = "2格"
+            }else{
+                self.titleLabel.text = "2 Blocks"
+            }
             self.getTwoBlocks()
             break
         case 3:
+            if  self.getCurrentLanguage() == "cn"{
+            self.titleLabel.text = "3格"
+        }else{
             self.titleLabel.text = "3 Blocks"
+        }
             self.getThreeBlocks()
             break
         default:
@@ -66,6 +74,24 @@ class RankViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             for item in self.moreView.subviews{
                 item.alpha = 0
             }
+        }
+    }
+    
+    //获取系统语言
+    func getCurrentLanguage() -> String {
+        //        let defs = UserDefaults.standard
+        //        let languages = defs.object(forKey: "AppleLanguages")
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        let preferredLang = Bundle.main.preferredLocalizations.first! as NSString
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        
+        switch String(describing: preferredLang) {
+        case "en-US", "en-CN":
+            return "en"//英文
+        case "zh-Hans-US","zh-Hans-CN","zh-Hant-CN","zh-TW","zh-HK","zh-Hans":
+            return "cn"//中文
+        default:
+            return "en"
         }
     }
     

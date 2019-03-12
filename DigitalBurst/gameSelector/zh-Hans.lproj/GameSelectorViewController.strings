@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Other"; ObjectID = "7Rc-OQ-RLw"; */
+"7Rc-OQ-RLw.text" = "其他";
+
+/* Class = "UIButton"; normalTitle = "2 blocks"; ObjectID = "GmX-ug-Y41"; */
+"GmX-ug-Y41.normalTitle" = "2格";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HfK-v5-rRX"; */
+"HfK-v5-rRX.text" = "Label";
+
+/* Class = "UILabel"; text = "Select Mode"; ObjectID = "Qhb-Vf-qt7"; */
+"Qhb-Vf-qt7.text" = "选择模式";
+
+/* Class = "UIButton"; normalTitle = "3 blocks"; ObjectID = "uTf-jd-ea6"; */
+"uTf-jd-ea6.normalTitle" = "3格";
+
+/* Class = "UIButton"; normalTitle = "skills"; ObjectID = "v2G-Ve-u5O"; */
+"v2G-Ve-u5O.normalTitle" = "技能介绍";
+
+/* Class = "UIButton"; normalTitle = "rank"; ObjectID = "zzB-U1-Rus"; */
+"zzB-U1-Rus.normalTitle" = "排行榜";

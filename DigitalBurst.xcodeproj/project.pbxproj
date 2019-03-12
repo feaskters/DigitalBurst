@@ -15,7 +15,6 @@
 		F736EDD72230BCFE00460137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F736EDD62230BCFE00460137 /* Assets.xcassets */; };
 		F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F736EDD82230BCFE00460137 /* LaunchScreen.storyboard */; };
 		F736EDE42230C71800460137 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDE22230C71800460137 /* GameSelectorViewController.swift */; };
-		F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDE32230C71800460137 /* GameSelectorViewController.xib */; };
 		F736EDEE2230C99A00460137 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = F736EDEC2230C99A00460137 /* Music.m */; };
 		F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F736EDED2230C99A00460137 /* button_click.mp3 */; };
 		F736EDF02230CA1900460137 /* DigitalBurst-Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = F736EDE72230C97900460137 /* DigitalBurst-Bridging-Header.h */; };
@@ -24,9 +23,7 @@
 		F736EDFE2230D39200460137 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F736EDFC2230D39200460137 /* GameViewController.xib */; };
 		F736EE002230FD4400460137 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736EDFF2230FD4400460137 /* NumberView.swift */; };
 		F74663DC22360EE900976B93 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74663DA22360EE900976B93 /* SkillsViewController.swift */; };
-		F74663DD22360EE900976B93 /* SkillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74663DB22360EE900976B93 /* SkillsViewController.xib */; };
 		F7D505A1223246C700D3ADBE /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D5059F223246C700D3ADBE /* GameOverViewController.swift */; };
-		F7D505A2223246C700D3ADBE /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D505A0223246C700D3ADBE /* GameOverViewController.xib */; };
 		F7D505B02232516D00D3ADBE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505A52232516D00D3ADBE /* FMDatabaseQueue.m */; };
 		F7D505B12232516D00D3ADBE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505A82232516D00D3ADBE /* FMDatabaseAdditions.m */; };
 		F7D505B22232516D00D3ADBE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505A92232516D00D3ADBE /* FMDatabase.m */; };
@@ -34,7 +31,11 @@
 		F7D505B42232516D00D3ADBE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505AE2232516D00D3ADBE /* FMResultSet.m */; };
 		F7D505B82232518700D3ADBE /* UserDb.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D505B62232518700D3ADBE /* UserDb.m */; };
 		F7D505BE22325C8A00D3ADBE /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D505BA223254F100D3ADBE /* RankViewController.swift */; };
-		F7D505BF22325C8E00D3ADBE /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D505BB223254F100D3ADBE /* RankViewController.xib */; };
+		F7D71AEE2237402B00DF241D /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D71AF02237402B00DF241D /* GameSelectorViewController.xib */; };
+		F7D71AF82237408600DF241D /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D71AFA2237408600DF241D /* RankViewController.xib */; };
+		F7D71AFF2237411800DF241D /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D71B012237411800DF241D /* GameOverViewController.xib */; };
+		F7D71B05223742F900DF241D /* SkillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D71B07223742F900DF241D /* SkillsViewController.xib */; };
+		F7D71B132237495500DF241D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D71B152237495500DF241D /* InfoPlist.strings */; };
 		F7E8AE84223222A800039FAB /* merge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7E8AE83223222A800039FAB /* merge.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,6 @@
 		F736EDD92230BCFE00460137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F736EDDB2230BCFE00460137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F736EDE22230C71800460137 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
-		F736EDE32230C71800460137 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
 		F736EDE72230C97900460137 /* DigitalBurst-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalBurst-Bridging-Header.h"; sourceTree = "<group>"; };
 		F736EDEB2230C99A00460137 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
 		F736EDEC2230C99A00460137 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
@@ -59,9 +59,7 @@
 		F736EDFC2230D39200460137 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		F736EDFF2230FD4400460137 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		F74663DA22360EE900976B93 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
-		F74663DB22360EE900976B93 /* SkillsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsViewController.xib; sourceTree = "<group>"; };
 		F7D5059F223246C700D3ADBE /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
-		F7D505A0223246C700D3ADBE /* GameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverViewController.xib; sourceTree = "<group>"; };
 		F7D505A42232516D00D3ADBE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		F7D505A52232516D00D3ADBE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		F7D505A62232516D00D3ADBE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
@@ -76,7 +74,18 @@
 		F7D505B62232518700D3ADBE /* UserDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDb.m; sourceTree = "<group>"; };
 		F7D505B72232518700D3ADBE /* UserDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDb.h; sourceTree = "<group>"; };
 		F7D505BA223254F100D3ADBE /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
-		F7D505BB223254F100D3ADBE /* RankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
+		F7D71AEC22373F3F00DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		F7D71AED22373F3F00DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F7D71AF22237402F00DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GameSelectorViewController.strings"; sourceTree = "<group>"; };
+		F7D71AFC2237408800DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RankViewController.strings"; sourceTree = "<group>"; };
+		F7D71B002237411800DF241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameOverViewController.xib; sourceTree = "<group>"; };
+		F7D71B022237411F00DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GameOverViewController.strings"; sourceTree = "<group>"; };
+		F7D71B032237412E00DF241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameSelectorViewController.xib; sourceTree = "<group>"; };
+		F7D71B042237413900DF241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RankViewController.xib; sourceTree = "<group>"; };
+		F7D71B06223742F900DF241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SkillsViewController.xib; sourceTree = "<group>"; };
+		F7D71B102237454700DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SkillsViewController.xib"; sourceTree = "<group>"; };
+		F7D71B142237495500DF241D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7D71B162237495600DF241D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F7E8AE83223222A800039FAB /* merge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = merge.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +130,7 @@
 				F736EDD62230BCFE00460137 /* Assets.xcassets */,
 				F736EDD82230BCFE00460137 /* LaunchScreen.storyboard */,
 				F736EDDB2230BCFE00460137 /* Info.plist */,
+				F7D71B152237495500DF241D /* InfoPlist.strings */,
 			);
 			path = DigitalBurst;
 			sourceTree = "<group>";
@@ -129,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F736EDE22230C71800460137 /* GameSelectorViewController.swift */,
-				F736EDE32230C71800460137 /* GameSelectorViewController.xib */,
+				F7D71AF02237402B00DF241D /* GameSelectorViewController.xib */,
 			);
 			path = gameSelector;
 			sourceTree = "<group>";
@@ -153,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				F736EDFB2230D39200460137 /* GameViewController.swift */,
+				F7D71B012237411800DF241D /* GameOverViewController.xib */,
 				F736EDFC2230D39200460137 /* GameViewController.xib */,
 				F736EDFF2230FD4400460137 /* NumberView.swift */,
 				F7D5059F223246C700D3ADBE /* GameOverViewController.swift */,
-				F7D505A0223246C700D3ADBE /* GameOverViewController.xib */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -184,10 +194,10 @@
 			children = (
 				F70A5D13223261CF00F72165 /* rankTableViewCell.xib */,
 				F7D505BA223254F100D3ADBE /* RankViewController.swift */,
-				F7D505BB223254F100D3ADBE /* RankViewController.xib */,
+				F7D71AFA2237408600DF241D /* RankViewController.xib */,
 				F70A5D15223261EE00F72165 /* rankTableViewCell.swift */,
 				F74663DA22360EE900976B93 /* SkillsViewController.swift */,
-				F74663DB22360EE900976B93 /* SkillsViewController.xib */,
+				F7D71B07223742F900DF241D /* SkillsViewController.xib */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -235,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F736EDC32230BCFD00460137;
 			productRefGroup = F736EDCD2230BCFD00460137 /* Products */;
@@ -251,18 +262,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D505A2223246C700D3ADBE /* GameOverViewController.xib in Resources */,
 				F70A5D14223261CF00F72165 /* rankTableViewCell.xib in Resources */,
+				F7D71B132237495500DF241D /* InfoPlist.strings in Resources */,
 				F736EDFE2230D39200460137 /* GameViewController.xib in Resources */,
 				F736EDF02230CA1900460137 /* DigitalBurst-Bridging-Header.h in Resources */,
-				F74663DD22360EE900976B93 /* SkillsViewController.xib in Resources */,
+				F7D71B05223742F900DF241D /* SkillsViewController.xib in Resources */,
 				F736EDDA2230BCFE00460137 /* LaunchScreen.storyboard in Resources */,
 				F736EDEF2230C99A00460137 /* button_click.mp3 in Resources */,
-				F736EDE52230C71800460137 /* GameSelectorViewController.xib in Resources */,
-				F7D505BF22325C8E00D3ADBE /* RankViewController.xib in Resources */,
+				F7D71AEE2237402B00DF241D /* GameSelectorViewController.xib in Resources */,
+				F7D71AF82237408600DF241D /* RankViewController.xib in Resources */,
 				F7E8AE84223222A800039FAB /* merge.mp3 in Resources */,
 				F736EDD72230BCFE00460137 /* Assets.xcassets in Resources */,
 				F736EDD52230BCFD00460137 /* Main.storyboard in Resources */,
+				F7D71AFF2237411800DF241D /* GameOverViewController.xib in Resources */,
 				F736EDF42230D03C00460137 /* BGM.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F736EDD42230BCFD00460137 /* Base */,
+				F7D71AEC22373F3F00DF241D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,8 +321,54 @@
 			isa = PBXVariantGroup;
 			children = (
 				F736EDD92230BCFE00460137 /* Base */,
+				F7D71AED22373F3F00DF241D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F7D71AF02237402B00DF241D /* GameSelectorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D71AF22237402F00DF241D /* zh-Hans */,
+				F7D71B032237412E00DF241D /* Base */,
+			);
+			name = GameSelectorViewController.xib;
+			sourceTree = "<group>";
+		};
+		F7D71AFA2237408600DF241D /* RankViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D71AFC2237408800DF241D /* zh-Hans */,
+				F7D71B042237413900DF241D /* Base */,
+			);
+			name = RankViewController.xib;
+			sourceTree = "<group>";
+		};
+		F7D71B012237411800DF241D /* GameOverViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D71B002237411800DF241D /* Base */,
+				F7D71B022237411F00DF241D /* zh-Hans */,
+			);
+			name = GameOverViewController.xib;
+			sourceTree = "<group>";
+		};
+		F7D71B07223742F900DF241D /* SkillsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D71B06223742F900DF241D /* Base */,
+				F7D71B102237454700DF241D /* zh-Hans */,
+			);
+			name = SkillsViewController.xib;
+			sourceTree = "<group>";
+		};
+		F7D71B152237495500DF241D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D71B142237495500DF241D /* en */,
+				F7D71B162237495600DF241D /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

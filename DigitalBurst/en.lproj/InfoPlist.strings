@@ -1,0 +1,9 @@
+/* 
+  infoPlist.strings
+  TenLock
+
+  Created by iOS123 on 2019/2/26.
+  Copyright © 2019年 iOS123. All rights reserved.
+*/
+CFBundleDisplayName = "DigitalBurst";
+CFBundleName = "DigitalBurst";
